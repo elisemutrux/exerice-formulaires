@@ -12,10 +12,6 @@
   padding: 0;
 }
 
-html {
-  font-size: 16px;
-}
-
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -23,6 +19,10 @@ body {
 
   font-size: 1rem;
   line-height: 1.25;
+  color: #dc2e55;
+  background-color: #15172b;
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
 }
 
 a {
@@ -45,8 +45,39 @@ div {
 }
 
 textarea {
-  max-width: 406px;
+  max-width: 445px;
   max-height: 150px;
-  min-width: 406px;
+  min-width: 445px;
   min-height: 150px;
+  background-color: #303245;
+  border: none;
+  border-radius: 10px;
+}
+
+input {
+  background-color: #303245;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+}
+
+.country select {
+  background-color: #303245;
+  border: none;
+  padding: 10px;
+  color: #65657a;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #0088dd;
+  border: none;
+  color: white;
+  font-family: "Playfair Display", serif;
+  padding: 15px 189px;
+  margin-left: 17px;
+  font-size: 18px;
+  border-radius: 10px;
 }
