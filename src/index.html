@@ -8,53 +8,94 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <form class="form">
-      <div class="profil">
-        <input type="text" name="firstname" placeholder="Prénom" />
-        <input type="text" name="name" placeholder="Nom" />
+      <div class="group group-profil">
+        <div class="profil">
+          <div class="textfield">
+            <input type="text" name="firstname" />
+            <label>Prénom</label>
+          </div>
+          <div class="textfield">
+            <input type="text" name="name" />
+            <label>Nom</label>
+          </div>
+        </div>
       </div>
-      <div class="language">
-        <input type="radio" id="french" name="language" value="french" />
-        <label for="french">Français</label>
-        <br />
-        <input type="radio" id="german" name="language" value="german" />
-        <label for="german">Allemand</label>
-        <br />
-        <input type="radio" id="english" name="language" value="english" />
-        <label for="english">Anglais</label>
+      <div class="group group-language">
+        <div class="language">
+          <label class="radio">
+            <input type="radio" name="language" />
+            <div class="radio-placeholder">
+              <div class="checked"></div>
+            </div>
+            Français
+          </label>
+          <br />
+          <label class="radio">
+            <input type="radio" name="language" />
+            <div class="radio-placeholder">
+              <div class="checked"></div>
+            </div>
+            Allemand
+          </label>
+          <br />
+          <label class="radio">
+            <input type="radio" name="language" />
+            <div class="radio-placeholder">
+              <div class="checked"></div>
+            </div>
+            Anglais
+          </label>
+        </div>
       </div>
-      <div class="acceptation">
-        <input
-          type="checkbox"
-          id="newsletter"
-          name="acceptetion"
-          value="newsletter"
-        />
-        <label for="newsletter">S’abonner à la newsletter</label>
-        <br />
-        <input
-          type="checkbox"
-          id="condition"
-          name="acceptation"
-          value="condition"
-        />
-        <label for="condition">J’accepte les conditions générales</label>
+      <div class="group group-acceptation">
+        <div class="acceptation">
+          <label class="switch" for="newsletter">
+            <input
+              type="checkbox"
+              id="newsletter"
+              name="acceptetion"
+              value="newsletter"
+            />
+            <div class="switch-wrapper">
+              <div class="switch-inner"></div>
+            </div>
+            S'abonner à la newsletter
+          </label>
+          <br />
+          <label class="switch" for="condition">
+            <input
+              type="checkbox"
+              id="condition"
+              name="acceptation"
+              value="condition"
+            />
+            <div class="switch-wrapper">
+              <div class="switch-inner"></div>
+            </div>
+            J'accepte les conditions générales
+          </label>
+        </div>
       </div>
-      <div class="country">
-        <select id="country" name="country">
-          <option value="ch">Suisse</option>
-          <option value="fr">France</option>
-          <option value="de">Allemagne</option>
-        </select>
+      <div class="group group-country">
+        <div class="country">
+          <select id="country" name="country">
+            <option value="ch">Suisse</option>
+            <option value="fr">France</option>
+            <option value="de">Allemagne</option>
+          </select>
+        </div>
       </div>
-      <div class="comment">
-        <label for="comment">Remarque</label> <br />
-        <textarea id="comment" name="comment"></textarea>
+      <div class="group group-comment">
+        <div class="comment">
+          <label for="comment">Remarque</label> <br />
+          <textarea id="comment" name="comment"></textarea>
+        </div>
       </div>
       <button type="submit">Envoyer</button>
     </form>
